@@ -1,7 +1,7 @@
 RxSwift,Combine,Notes
 AnyObserver,AnySubscriber,
 BehaviorRelay,❌,"Simple wrapper around BehaviorSubject, could be easily recreated in Combine"
-BehaviorSubject,CurrentValueSubject,This seems to be the type that holds @State under the hood
+BehaviorSubject,CurrentValueSubject + buffer,CurrentValueSubject behaves similarly to BehaviorSubject, but does not forward the current value to subscribers when it recieves a new subscription. This seems to be the type that holds @State under the hood
 Completable,❌,
 CompositeDisposable,❌,
 ConnectableObservableType,ConnectablePublisher,
